@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/browser.js"],"names":[],"mappings":";;AAAA,MAAM,IAAI,KAAJ,CAAU,eAAV,CAAN","file":"browser.js","sourcesContent":["throw new Error('Not supported');\n"]}
