@@ -9,13 +9,13 @@ const mapToSentryLevel = {
     [levels.ERROR]: 'error',
     [levels.FATAL]: 'fatal',
     [levels.EMERGENCY]: 'fatal',
-}
+};
 
 export default function sentryOutput(ravenUrl) {
     const ravenClient = new RavenClient(ravenUrl);
 
     return function write(_, { level, metadata, extra }) {
-        let error = metadata.error;
+        let error = metadata && metadata.error;
 
         if (!error) {
             return;
